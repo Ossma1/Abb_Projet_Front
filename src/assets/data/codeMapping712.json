@@ -1,0 +1,178 @@
+{
+  "CL01": {
+    "intitule": "CL-01",
+    "intituleComplementaire": "Transferts nationaux"
+  },
+  "CL02": {
+    "intitule": "CL-01-1",
+    "intituleComplementaire": "Client à risque faible"
+  },
+  "CL03": {
+    "intitule": "CL-01-2",
+    "intituleComplementaire": "Client à risque moyen"
+  },
+  "CL04": {
+    "intitule": "CL-01-3",
+    "intituleComplementaire": "Client à risque moyen à élévé"
+  },
+  "CL05": {
+    "intitule": "CL-01-4",
+    "intituleComplementaire": "Client à risque élévé"
+  },
+  "CL06": {
+    "intitule": "CL-01-4-1",
+    "intituleComplementaire": "Dont PPE"
+  },
+  "CL07": {
+    "intitule": "CL-01-4-2",
+    "intituleComplementaire": "Dont étrangers non résidents"
+  },
+  "CL08": {
+    "intitule": "CL-02",
+    "intituleComplementaire": "Transferts internationaux"
+  },
+  "CL09": {
+    "intitule": "CL-02-1",
+    "intituleComplementaire": "Client à risque faible"
+  },
+  "CL10": {
+    "intitule": "CL-02-2",
+    "intituleComplementaire": "Client à risque moyen"
+  },
+  "CL11": {
+    "intitule": "CL-02-3",
+    "intituleComplementaire": "Client à risque moyen à élévé"
+  },
+  "CL12": {
+    "intitule": "CL-02-4",
+    "intituleComplementaire": "Client à risque élévé"
+  },
+  "CL13": {
+    "intitule": "CL-02-4-1",
+    "intituleComplementaire": "Dont PPE"
+  },
+  "CL14": {
+    "intitule": "CL-02-4-2",
+    "intituleComplementaire": "Dont étrangers non résidents"
+  },
+  "TR01": {
+    "intitule": "TR-01",
+    "intituleComplementaire": "Inférieur 2000 dhs"
+  },
+  "TR02": {
+    "intitule": "TR-02",
+    "intituleComplementaire": "]2 000 - 5 000 dhs]"
+  },
+  "TR03": {
+    "intitule": "TR-03",
+    "intituleComplementaire": "]5 000 - 10 000 dhs]"
+  },
+  "TR04": {
+    "intitule": "TR-04",
+    "intituleComplementaire": "]10 000 - 50 000 dhs]"
+  },
+  "TR05": {
+    "intitule": "TR-05",
+    "intituleComplementaire": "]50 000 - 80 000 dhs]"
+  },
+  "TR06": {
+    "intitule": "TR-06",
+    "intituleComplementaire": "Superieur à 80 000 dhs"
+  },
+  "CD01": {
+    "intitule": "CD-01",
+    "intituleComplementaire": "MTO"
+  },
+  "CD02": {
+    "intitule": "CD-01-1",
+    "intituleComplementaire": "WESTERN UNION"
+  },
+  "CD03": {
+    "intitule": "CD-01-2",
+    "intituleComplementaire": "Money Gram"
+  },
+  "CD04": {
+    "intitule": "CD-01-3",
+    "intituleComplementaire": "RIA"
+  },
+  "CD05": {
+    "intitule": "CD-01-4",
+    "intituleComplementaire": "MONEY TRANS"
+  },
+  "CD06": {
+    "intitule": "CD-01-5",
+    "intituleComplementaire": "SIGUE"
+  },
+  "CD07": {
+    "intitule": "CD-01-6",
+    "intituleComplementaire": "MONEY EXCHANGE"
+  },
+  "CD08": {
+    "intitule": "CD-01-7",
+    "intituleComplementaire": "I-Transfert"
+  },
+  "CD09": {
+    "intitule": "CD-01-8",
+    "intituleComplementaire": "AUTRES"
+  },
+  "CD10": {
+    "intitule": "CD-02",
+    "intituleComplementaire": "Réseau propres ( Nationaux et internationaux)"
+  },
+  "CD11": {
+    "intitule": "CD-03",
+    "intituleComplementaire": "Mandataitres ( Nationaux et internationaux)"
+  },
+  "GE01": {
+    "intitule": "GEO-01",
+    "intituleComplementaire": "Transferts internationnaux émis vers des pays à risque"
+  },
+  "GE02": {
+    "intitule": "GEO-02",
+    "intituleComplementaire": "Transferts internationnaux reçus de pays à risque élevé"
+  },
+  "AT01": {
+    "intitule": "Autres-01",
+    "intituleComplementaire": "Déclaration de soupçons sur les 3 dernières années"
+  },
+  "AT02": {
+    "intitule": "Autres-01-01",
+    "intituleComplementaire": "Transferts nationaux"
+  },
+  "AT03": {
+    "intitule": "Autres-01-02",
+    "intituleComplementaire": "Transferts internationaux"
+  },
+  "AT04": {
+    "intitule": "Autres-01-02-01",
+    "intituleComplementaire": "WESTERN UNION"
+  },
+  "AT05": {
+    "intitule": "Autres-01-02-02",
+    "intituleComplementaire": "Money Gram"
+  },
+  "AT06": {
+    "intitule": "Autres-01-02-03",
+    "intituleComplementaire": "RIA"
+  },
+  "AT07": {
+    "intitule": "Autres-01-02-04",
+    "intituleComplementaire": "MONEY TRANS"
+  },
+  "AT08": {
+    "intitule": "Autres-01-02-05",
+    "intituleComplementaire": "SIGUE"
+  },
+  "AT09": {
+    "intitule": "Autres-01-02-06",
+    "intituleComplementaire": "MONEY EXCHANGE"
+  },
+  "AT10": {
+    "intitule": "Autres-01-02-07",
+    "intituleComplementaire": "I-Transfert"
+  },
+  "AT11": {
+    "intitule": "Autres-01-02-08",
+    "intituleComplementaire": "AUTRES"
+  }
+}

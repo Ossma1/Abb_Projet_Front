@@ -1,0 +1,94 @@
+{
+  "CL01": {
+      "intitule": "CL-01",
+      "intituleComplementaire": "Personnes morales"
+  },
+  "CL02": {
+      "intitule": "CL-01-1",
+      "intituleComplementaire": "Client à risque faible"
+  },
+  "CL03": {
+      "intitule": "CL-01-2",
+      "intituleComplementaire": "Client à risque moyen"
+  },
+  "CL04": {
+      "intitule": "CL-01-3",
+      "intituleComplementaire": "Client à risque moyen à élevé"
+  },
+  "CL05": {
+      "intitule": "CL-01-4",
+      "intituleComplementaire": "Client à risque élevé"
+  },
+  "CL06": {
+      "intitule": "CL-01-4-1",
+      "intituleComplementaire": "Dont PPE"
+  },
+  "CL07": {
+      "intitule": "CL-01-4-2",
+      "intituleComplementaire": "Dont constructions juridiques y compris les trusts ou toutes structures juridiques équivalentes"
+  },
+  "PP01": {
+      "intitule": "PDT-01",
+      "intituleComplementaire": "Compte en devises"
+  },
+  "PP02": {
+      "intitule": "PDT-01-1",
+      "intituleComplementaire": "dont compte non-résident en devises"
+  },
+  "PP03": {
+      "intitule": "PDT-02",
+      "intituleComplementaire": "Compte en Dirhams Convertibles"
+  },
+  "PP04": {
+      "intitule": "PDT-02-1",
+      "intituleComplementaire": "dont compte non-résident en Dirhams convertibles"
+  },
+  "TR01": {
+      "intitule": "TR-01",
+      "intituleComplementaire": "Transferts internationaux reçus"
+  },
+  "TR02": {
+      "intitule": "TR-02",
+      "intituleComplementaire": "Transferts internationaux émis"
+  },
+  "TR03": {
+      "intitule": "TR-03",
+      "intituleComplementaire": "Crédit documentaire export"
+  },
+  "TR04": {
+      "intitule": "TR-04",
+      "intituleComplementaire": "Crédit documentaire import"
+  },
+  "TR05": {
+      "intitule": "TR-05",
+      "intituleComplementaire": "Remise documentaire export"
+  },
+  "TR06": {
+      "intitule": "TR-06",
+      "intituleComplementaire": "Remise documentaire import"
+  },
+  "TR07": {
+      "intitule": "TR-07",
+      "intituleComplementaire": "Lettre de crédit Stand-by"
+  },
+  "CD01": {
+      "intitule": "CD-01",
+      "intituleComplementaire": "Opérations via le Web ou application mobile"
+  },
+  "CD02": {
+      "intitule": "CD-02",
+      "intituleComplementaire": "Opérations via le réseau d’agences"
+  },
+  "GEO01": {
+      "intitule": "GEO-01",
+      "intituleComplementaire": "Virements transfrontaliers en provenance de juridictions à risque élevé"
+  },
+  "GEO02": {
+      "intitule": "GEO-02",
+      "intituleComplementaire": "Virements transfrontaliers à destination de juridictions à risque élevé"
+  },
+  "AT01": {
+      "intitule": "Autres-01",
+      "intituleComplementaire": "Fraudes et détournements sur les 3 dernières années"
+  }
+}

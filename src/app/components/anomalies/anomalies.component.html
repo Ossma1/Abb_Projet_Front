@@ -1,0 +1,124 @@
+<ng-container *ngIf="state !== '700' && state !== '705'">
+  <p-table #dt [resizableColumns]="true" [autoLayout]="true" [value]="tableData" [rows]="10" [paginator]="true"
+    [globalFilterFields]="['controle', 'client.codeAxes', 'client.libelleAxes']" [tableStyle]="{ 'min-width': '75rem' }"
+    [rowHover]="true" dataKey="id" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+    [showCurrentPageReport]="true">
+    <ng-template pTemplate="caption">
+      <div style="display: flex; justify-content: space-between;">
+        <span class="p-input-icon-left ml-auto">
+          <i class="pi pi-search"></i>
+          <input pInputText type="text" placeholder="Search keyword"
+            (input)="dt.filterGlobal($any($event.target).value, 'contains')">
+        </span>
+      </div>
+    </ng-template>
+    <ng-template pTemplate="header">
+      <tr>
+        <th *ngFor="let col of cols">{{ col.header }}</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-rowData>
+      <tr>
+        <td *ngFor="let col of cols">
+          <span style="font-size: 12px;" *ngIf="col.field.includes('.')">{{ resolveField(rowData, col.field) }}</span>
+          <span style="font-size: 12px;" *ngIf="!col.field.includes('.')">{{ rowData[col.field] }}</span>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+</ng-container>
+
+<ng-container *ngIf="state === '700'">
+  <p-table #dt [resizableColumns]="true" [autoLayout]="true" [value]="tableData" [rows]="10" [paginator]="true"
+    [globalFilterFields]="['controle', 'axeE700.numLigne', 'axeE700.ligneDocument']" [tableStyle]="{ 'min-width': '75rem' }"
+    [rowHover]="true" dataKey="id" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+    [showCurrentPageReport]="true">
+    <ng-template pTemplate="caption">
+      <div style="display: flex; justify-content: space-between;">
+        <span class="p-input-icon-left ml-auto">
+          <i class="pi pi-search"></i>
+          <input pInputText type="text" placeholder="Search keyword"
+            (input)="dt.filterGlobal($any($event.target).value, 'contains')">
+        </span>
+      </div>
+    </ng-template>
+    <ng-template pTemplate="header">
+      <tr>
+        <th *ngFor="let col of cols">{{ col.header }}</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-rowData>
+      <tr>
+        <td *ngFor="let col of cols">
+          <span style="font-size: 12px;" *ngIf="col.field.includes('.')">{{ resolveField(rowData, col.field) }}</span>
+          <span style="font-size: 12px;" *ngIf="!col.field.includes('.')">{{ rowData[col.field] }}</span>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+</ng-container>
+
+<ng-container *ngIf="state === '705'">
+  <p-tabMenu [model]="items" [(activeItem)]="activeItem"></p-tabMenu>
+
+  <div *ngIf="activeItem.label === 'CB1 Anomalies'">
+    <p-table #dt1 [value]="cb1Data" [rows]="10" [paginator]="true"
+      [globalFilterFields]="['controle', 'cb1.pays', 'cb1.totalFluxType']"
+      [tableStyle]="{ 'min-width': '75rem' }" [rowHover]="true" dataKey="numLigne"
+      currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [showCurrentPageReport]="true">
+      <ng-template pTemplate="caption">
+        <div style="display: flex; justify-content: space-between;">
+          <span class="p-input-icon-left ml-auto">
+            <i class="pi pi-search"></i>
+            <input pInputText type="text" placeholder="Search keyword"
+              (input)="dt1.filterGlobal($any($event.target).value, 'contains')">
+          </span>
+        </div>
+      </ng-template>
+      <ng-template pTemplate="header">
+        <tr>
+          <th *ngFor="let col of cb1Cols">{{ col.header }}</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-anomalie>
+        <tr>
+          <td *ngFor="let col of cb1Cols">
+            <span style="font-size: 12px;" *ngIf="col.field.includes('.')">{{ resolveField(anomalie, col.field) }}</span>
+            <span style="font-size: 12px;" *ngIf="!col.field.includes('.')">{{ anomalie[col.field] }}</span>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+
+  <div *ngIf="activeItem.label === 'CB2 Anomalies'">
+    <p-table #dt2 [value]="cb2Data" [rows]="10" [paginator]="true"
+      [globalFilterFields]="['controle', 'cb2.numLigne', 'cb2.nom', 'cb2.codeBIC', 'cb2.dateEntreeEnRelation', 'cb2.maisonMereOuFiliale', 'cb2.compteNostroOuVostro', 'cb2.devise', 'cb2.paysAgrement', 'cb2.niveauRisqueBCFTDuPays', 'cb2.profilRisqueBeneficiairesEffectifs', 'cb2.utilisationCompteCorrespondanceParTiers', 'cb2.statutDuCompte', 'cb2.nombreFluxEmis', 'cb2.nombreFluxEmisPaysRisque', 'cb2.volumeFluxEmis', 'cb2.volumeFluxEmisPaysRisque', 'cb2.nombreFluxRecus', 'cb2.nombreFluxRecusPaysRisque', 'cb2.volumeFluxRecus', 'cb2.volumeFluxRecusPaysRisque']"
+      [tableStyle]="{ 'min-width': '75rem' }" [rowHover]="true" dataKey="numLigne" [resizableColumns]="true"
+      [autoLayout]="true" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+      [showCurrentPageReport]="true">
+      <ng-template pTemplate="caption">
+        <div style="display: flex; justify-content: space-between;">
+          <span class="p-input-icon-left ml-auto">
+            <i class="pi pi-search"></i>
+            <input pInputText type="text" placeholder="Search keyword"
+              (input)="dt2.filterGlobal($any($event.target).value, 'contains')">
+          </span>
+        </div>
+      </ng-template>
+      <ng-template pTemplate="header">
+        <tr class="small-header">
+          <th *ngFor="let col of cb2Cols">{{ col.header }}</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-anomalie>
+        <tr>
+          <td *ngFor="let col of cb2Cols">
+            <span style="font-size: 12px;" *ngIf="col.field.includes('.')">{{ resolveField(anomalie, col.field) }}</span>
+            <span style="font-size: 12px;" *ngIf="!col.field.includes('.')">{{ anomalie[col.field] }}</span>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</ng-container>

@@ -1,0 +1,122 @@
+{
+  "CL01": {
+    "intitule": "CL-01",
+    "intituleComplementaire": "Clients Adhérents"
+  },
+  "CL02": {
+    "intitule": "CL-01-1",
+    "intituleComplementaire": "Client Adhérent à risque faible"
+  },
+  "CL03": {
+    "intitule": "CL-01-2",
+    "intituleComplementaire": "Client Adhérent à risque moyen"
+  },
+  "CL04": {
+    "intitule": "CL-01-3",
+    "intituleComplementaire": "Client Adhérent à risque moyen à élévé"
+  },
+  "CL05": {
+    "intitule": "CL-01-4",
+    "intituleComplementaire": "Client Adhérent à risque élévé"
+  },
+  "CL06": {
+    "intitule": "CL-01-4-1",
+    "intituleComplementaire": "Dont PPE"
+  },
+  "CL07": {
+    "intitule": "CL-01-4-3",
+    "intituleComplementaire": "Dont constructions juridiques y compris les trusts ou toutes structures juridiques équivalentes"
+  },
+  "CL08": {
+    "intitule": "CL-02",
+    "intituleComplementaire": "Clients Débiteurs"
+  },
+  "CL09": {
+    "intitule": "CL-02-1",
+    "intituleComplementaire": "Client Débiteur à risque faible"
+  },
+  "CL10": {
+    "intitule": "CL-02-2",
+    "intituleComplementaire": "Client Débiteur à risque moyen"
+  },
+  "CL11": {
+    "intitule": "CL-02-3",
+    "intituleComplementaire": "Client Débiteur à risque moyen-élevé"
+  },
+  "CL12": {
+    "intitule": "CL-02-4",
+    "intituleComplementaire": "Client Débiteur à risque élevé"
+  },
+  "CL13": {
+    "intitule": "CL-02-4-1",
+    "intituleComplementaire": "Dont PPE"
+  },
+  "CL14": {
+    "intitule": "CL-02-4-3",
+    "intituleComplementaire": "Dont constructions juridiques y compris les trusts ou toutes structures juridiques équivalentes"
+  },
+  "PP01": {
+    "intitule": "PDT-01",
+    "intituleComplementaire": "Factoring à l'export"
+  },
+  "PP02": {
+    "intitule": "PDT-02",
+    "intituleComplementaire": "Factoring domestique"
+  },
+  "PP03": {
+    "intitule": "PDT-03",
+    "intituleComplementaire": "Confirming"
+  },
+  "TR01": {
+    "intitule": "TR-01",
+    "intituleComplementaire": "Paiement en espèces"
+  },
+  "CD01": {
+    "intitule": "CD-01",
+    "intituleComplementaire": "Financement direct"
+  },
+  "CD02": {
+    "intitule": "CD-02",
+    "intituleComplementaire": "Financement à travers des tiers (dont le groupe)"
+  },
+  "GEO01": {
+    "intitule": "GEO-01",
+    "intituleComplementaire": "Clients situés dans des juridictions à risque élevé"
+  },
+  "GEO02": {
+    "intitule": "GEO-02",
+    "intituleComplementaire": "Clients de nationalités considérées comme juridictions à risques élevés"
+  },
+  "AT01": {
+    "intitule": "Autres-01",
+    "intituleComplementaire": "Déclaration de soupçons sur les 5 dernières années"
+  },
+  "AT02": {
+    "intitule": "Autres-01-01",
+    "intituleComplementaire": "Factoring à l'export"
+  },
+  "AT03": {
+    "intitule": "Autres-01-02",
+    "intituleComplementaire": "Factoring domestique"
+  },
+  "AT04": {
+    "intitule": "Autres-01-03",
+    "intituleComplementaire": "Confirming"
+  },
+  "AT05": {
+    "intitule": "Autres-02",
+    "intituleComplementaire": "Fraudes et détournements sur les 5 dernières années"
+  },
+  "AT06": {
+    "intitule": "Autres-02-01",
+    "intituleComplementaire": "Factoring à l'export"
+  },
+  "AT07": {
+    "intitule": "Autres-02-02",
+    "intituleComplementaire": "Factoring domestique"
+  },
+  "AT08": {
+    "intitule": "Autres-02-03",
+    "intituleComplementaire": "Confirming"
+  }
+}

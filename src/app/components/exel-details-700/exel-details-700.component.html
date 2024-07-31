@@ -1,0 +1,180 @@
+<div>
+
+  <p-table #dt [value]="tableData" [rows]="10" [paginator]="true" [globalFilterFields]="['ligneDocument']"
+    [tableStyle]="{ 'min-width': '80rem' }" [rowHover]="true" dataKey="ligneDocument" [(selection)]="selectedLignes"
+    currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [showCurrentPageReport]="true">
+    <ng-template pTemplate="header">
+      <tr>
+        <th><p-tableHeaderCheckbox></p-tableHeaderCheckbox></th>
+        <th pSortableColumn="ligneDocument" style="width: 7%;">Ligne de métier</th>
+        <th pSortableColumn="traficIlliciteStupefiants">Le trafic illicite de stupéfiants et de substances psychotropes
+        </th>
+        <th pSortableColumn="traficEtresHumains">Le trafic d'êtres humains</th>
+        <th pSortableColumn="traficImmigrants">Le trafic d'immigrants</th>
+        <th pSortableColumn="traficIlliciteArmes">Le trafic illicite d'armes et de munitions</th>
+        <th pSortableColumn="corruptionConcussion">La corruption, la concussion, le trafic d'influence et le
+          détournement de biens publics et privés</th>
+        <th pSortableColumn="contrefaconMonnaies">La contrefaçon ou la falsification des monnaies ou effets de crédit
+          public ou d'autres moyens de paiement</th>
+        <th pSortableColumn="exploitationSexuelle">L'exploitation sexuelle</th>
+        <th pSortableColumn="abusConfiance">L'abus de confiance</th>
+        <th pSortableColumn="escroquerie">L’escroquerie</th>
+        <th pSortableColumn="volExtorsion">Le vol et l'extorsion</th>
+        <th pSortableColumn="contrebande">La contrebande</th>
+        <th pSortableColumn="fraudeMarchandises">La fraude sur les marchandises et sur les denrées alimentaires</th>
+        <th pSortableColumn="fauxUsageFaux">Le faux, l’usage de faux et l’usurpation ou l’usage irrégulier de fonctions,
+          de titres ou de noms</th>
+        <th pSortableColumn="attelongeSystemesTraitement">L’atteinte aux systèmes de traitement automatisé des données
+        </th>
+        <th pSortableColumn="financementTerrorisme">Le financement du terrorisme</th>
+        <th pSortableColumn="total">Total</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-axe>
+      <tr>
+        <td><p-tableCheckbox [value]="axe"></p-tableCheckbox></td>
+        <td>{{axe.ligneDocument}}</td>
+        <td>{{axe.traficIlliciteStupefiants.value}}</td>
+        <td>{{axe.traficEtresHumains.value}}</td>
+        <td>{{axe.traficImmigrants.value}}</td>
+        <td>{{axe.traficIlliciteArmes.value}}</td>
+        <td>{{axe.corruptionConcussion.value}}</td>
+        <td>{{axe.contrefaconMonnaies.value}}</td>
+        <td>{{axe.exploitationSexuelle.value}}</td>
+        <td>{{axe.abusConfiance.value}}</td>
+        <td>{{axe.escroquerie.value}}</td>
+        <td>{{axe.volExtorsion.value}}</td>
+        <td>{{axe.contrebande.value}}</td>
+        <td>{{axe.fraudeMarchandises.value}}</td>
+        <td>{{axe.fauxUsageFaux.value}}</td>
+        <td>{{axe.attelongeSystemesTraitement.value}}</td>
+        <td>{{axe.financementTerrorisme.value}}</td>
+        <td>{{axe.total.value}}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+
+  <div style="display: flex;gap: 20px; margin-top: 10px; margin-left: calc(100% - 420px);">
+    <button type="button" class="button-ligne" pButton label="Ajouter une ligne" (click)="showAddAxeDialog()"></button>
+    <button type="button" class="button-ligne" pButton label="Enregister" (click)="saveData()"></button>
+    <button type="button" class="button-ligne" pButton label="Supprimer" (click)="deleteRow(dt.selection)"></button>
+  </div>
+
+</div>
+<p-dialog [draggable]="false" [closable]="true" [resizable]="false" [(visible)]="displayAddAxeDialog"
+  header="Ajouter une ligne" [modal]="true" [style]="{width: '800px'}">
+  <div class="form-container">
+    <div class="form-column">
+    <div class="form-field">
+      <label for="ligneDocument">Ligne Document</label>
+      <p-dropdown [style]="{'width':'100%'}" appendTo="body" [options]="ligneDocumentOptions"
+        [(ngModel)]="newAxe.ligneDocument" placeholder="Sélectionner un ligne Document"></p-dropdown>
+      <div *ngIf="!newAxe.ligneDocument && submitted" class="error">ligne Document est obligatoire</div>
+    </div>
+
+
+
+    <div class="form-field">
+      <label for="traficImmigrants">Trafic d'Immigrants</label>
+      <input id="traficImmigrants" type="number" pInputText [(ngModel)]="newAxe.traficImmigrants.value" (input)="onValueChange()"  />
+    </div>
+    <div class="form-field">
+      <label for="contrefaconMonnaies">Contrefaçon de Monnaies</label>
+      <input id="contrefaconMonnaies" type="number" pInputText [(ngModel)]="newAxe.contrefaconMonnaies.value" (input)="onValueChange()"  />
+    </div><div class="form-field">
+      <label for="escroquerie">Escroquerie</label>
+      <input id="escroquerie" type="number" pInputText [(ngModel)]="newAxe.escroquerie.value" (input)="onValueChange()"  />
+    </div> <div class="form-field">
+      <label for="fraudeMarchandises">Fraude sur les Marchandises</label>
+      <input id="fraudeMarchandises" type="number" pInputText [(ngModel)]="newAxe.fraudeMarchandises.value" (input)="onValueChange()"  />
+    </div>
+    <div class="form-field">
+      <label for="financementTerrorisme">Financement du Terrorisme</label>
+      <input id="financementTerrorisme" type="number" pInputText [(ngModel)]="newAxe.financementTerrorisme.value" (input)="onValueChange()"  />
+    </div>
+
+
+
+    </div>
+    <div class="form-column">
+      <div class="form-field">
+        <label for="traficIlliciteStupefiants">Trafic Illicite de Stupéfiants</label>
+        <input id="traficIlliciteStupefiants" type="number" pInputText
+          [(ngModel)]="newAxe.traficIlliciteStupefiants.value" (input)="onValueChange()"  />
+      </div>
+      <div class="form-field">
+        <label for="traficIlliciteArmes">Trafic Illicite d'Armes</label>
+        <input id="traficIlliciteArmes" type="number" pInputText [(ngModel)]="newAxe.traficIlliciteArmes.value" (input)="onValueChange()"  />
+      </div>
+      <div class="form-field">
+        <label for="exploitationSexuelle">Exploitation Sexuelle</label>
+        <input id="exploitationSexuelle" type="number" pInputText [(ngModel)]="newAxe.exploitationSexuelle.value" (input)="onValueChange()"  />
+      </div>
+
+      <div class="form-field">
+        <label for="volExtorsion">Vol et Extorsion</label>
+        <input id="volExtorsion" type="number" pInputText [(ngModel)]="newAxe.volExtorsion.value" (input)="onValueChange()"  />
+      </div>
+      <div class="form-field">
+        <label for="fauxUsageFaux">Faux et Usage de Faux</label>
+        <input id="fauxUsageFaux" type="number" pInputText [(ngModel)]="newAxe.fauxUsageFaux.value" (input)="onValueChange()"  />
+      </div>
+      <div class="form-field"  >
+        <label for="total">Total</label>
+        <input id="total" type="number" pInputText [(ngModel)]="newAxe.total.value" (input)="onValueChange()"  readonly />
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  <div class="form-column">
+     <div class="form-field">
+        <label for="traficEtresHumains">Trafic d'Êtres Humains</label>
+        <input id="traficEtresHumains" type="number" pInputText [(ngModel)]="newAxe.traficEtresHumains.value" (input)="onValueChange()"  />
+      </div>
+      <div class="form-field">
+        <label for="corruptionConcussion">Corruption et Concussion</label>
+        <input id="corruptionConcussion" type="number" pInputText [(ngModel)]="newAxe.corruptionConcussion.value" (input)="onValueChange()"  />
+      </div>
+      <div class="form-field">
+        <label for="abusConfiance">Abus de Confiance</label>
+        <input id="abusConfiance" type="number" pInputText [(ngModel)]="newAxe.abusConfiance.value" (input)="onValueChange()"  />
+      </div> <div class="form-field">
+        <label for="contrebande">Contrebande</label>
+        <input id="contrebande" type="number" pInputText [(ngModel)]="newAxe.contrebande.value" (input)="onValueChange()"  />
+      </div>
+      <div class="form-field">
+        <label for="attelongeSystemesTraitement">Atteinte aux Systèmes de Traitement Automatisé</label>
+        <input id="attelongeSystemesTraitement" type="number" pInputText
+          [(ngModel)]="newAxe.attelongeSystemesTraitement.value" (input)="onValueChange()"  />
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  </div>
+
+
+  <p-footer>
+    <button type="button" pButton label="Ajouter" icon="pi pi-check" (click)="addAxe()"
+      class="ui-button-success"></button>
+    <button type="button" pButton label="Annuler" icon="pi pi-times" (click)="displayAddAxeDialog=false"
+      class="ui-button-secondary"></button>
+  </p-footer>
+</p-dialog>

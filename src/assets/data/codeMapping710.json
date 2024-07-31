@@ -1,0 +1,158 @@
+{
+  "CL01": {
+    "intitule": "CL-01",
+    "intituleComplementaire": "Particuliers et professionnels"
+  },
+  "CL02": {
+    "intitule": "CL-01-1",
+    "intituleComplementaire": "Client à risque faible"
+  },
+  "CL03": {
+    "intitule": "CL-01-2",
+    "intituleComplementaire": "Client à risque moyen"
+  },
+  "CL04": {
+    "intitule": "CL-01-3",
+    "intituleComplementaire": "Client à risque moyen à élevé"
+  },
+  "CL05": {
+    "intitule": "CL-01-4",
+    "intituleComplementaire": "Client à risque élevé"
+  },
+  "CL06": {
+    "intitule": "CL-01-4-1",
+    "intituleComplementaire": "Dont PPE"
+  },
+  "CL07": {
+    "intitule": "CL-01-4-2",
+    "intituleComplementaire": "Dont étrangers non résidents"
+  },
+  "CL08": {
+    "intitule": "CL-02",
+    "intituleComplementaire": "Personnes morales"
+  },
+  "CL09": {
+    "intitule": "CL-02-1",
+    "intituleComplementaire": "Client à risque faible"
+  },
+  "CL10": {
+    "intitule": "CL-02-2",
+    "intituleComplementaire": "Client à risque moyen"
+  },
+  "CL11": {
+    "intitule": "CL-02-3",
+    "intituleComplementaire": "Client à risque moyen à élevé"
+  },
+  "CL12": {
+    "intitule": "CL-02-4",
+    "intituleComplementaire": "Client à risque élevé"
+  },
+  "CL13": {
+    "intitule": "CL-02-4-1",
+    "intituleComplementaire": "Dont PPE"
+  },
+  "CL14": {
+    "intitule": "CL-02-4-2",
+    "intituleComplementaire": "Dont constructions juridiques y compris les trusts ou toutes structures juridiques équivalentes"
+  },
+  "PP01": {
+    "intitule": "PDT-01",
+    "intituleComplementaire": "Crédit-bail mobilier"
+  },
+  "PP02": {
+    "intitule": "PDT-01-01",
+    "intituleComplementaire": "dont Leaseback"
+  },
+  "PP03": {
+    "intitule": "PDT-02",
+    "intituleComplementaire": "Crédit bail immobilier"
+  },
+  "PP04": {
+    "intitule": "PDT-02-01",
+    "intituleComplementaire": "dont Crédit bail constructions"
+  },
+  "PP05": {
+    "intitule": "PDT-02-02",
+    "intituleComplementaire": "dont Leaseback"
+  },
+  "TR01": {
+    "intitule": "TR-01",
+    "intituleComplementaire": "Paiement des échéances en espèces"
+  },
+  "TR02": {
+    "intitule": "TR-02",
+    "intituleComplementaire": "Apports personnel (1er loyer majoré)"
+  },
+  "TR03": {
+    "intitule": "TR-02-1",
+    "intituleComplementaire": "dont apports en espèces"
+  },
+  "TR04": {
+    "intitule": "TR-03",
+    "intituleComplementaire": "Levée d'option de l'année (valeur résiduelle)"
+  },
+  "TR05": {
+    "intitule": "TR-03-01",
+    "intituleComplementaire": "dont le paiement en espèces"
+  },
+  "CD01": {
+    "intitule": "CD-01",
+    "intituleComplementaire": "Financement direct"
+  },
+  "CD02": {
+    "intitule": "CD-02",
+    "intituleComplementaire": "Financement à travers le réseau de la banque"
+  },
+  "CD03": {
+    "intitule": "CD-03",
+    "intituleComplementaire": "Financements apportés par des apporteurs d'affaires (Fournisseurs par exemple)"
+  },
+  "GE01": {
+    "intitule": "GEO-01",
+    "intituleComplementaire": "Financements pour des Clients résidents dans des juridictions à risque élevé"
+  },
+  "GE02": {
+    "intitule": "GEO-02",
+    "intituleComplementaire": "Financements pour Clients de nationalité considérées comme juridictions à risques élevés"
+  },
+  "AT01": {
+    "intitule": "Autres-01",
+    "intituleComplementaire": "Déclaration de soupçons sur les 3 dernières années"
+  },
+  "AT02": {
+    "intitule": "Autres-01-01",
+    "intituleComplementaire": "Crédit-bail mobilier"
+  },
+  "AT03": {
+    "intitule": "Autres-01-02",
+    "intituleComplementaire": "Crédit bail immobilier"
+  },
+  "AT04": {
+    "intitule": "Autres-01-03",
+    "intituleComplementaire": "Crédit bail constructions"
+  },
+  "AT05": {
+    "intitule": "Autres-01-04",
+    "intituleComplementaire": "Leaseback"
+  },
+  "AT06": {
+    "intitule": "Autres-02",
+    "intituleComplementaire": "Fraudes et détournements sur les 3 dernières années"
+  },
+  "AT07": {
+    "intitule": "Autres-02-01",
+    "intituleComplementaire": "Crédit-bail mobilier"
+  },
+  "AT08": {
+    "intitule": "Autres-02-02",
+    "intituleComplementaire": "Crédit bail immobilier"
+  },
+  "AT09": {
+    "intitule": "Autres-02-03",
+    "intituleComplementaire": "Crédit bail constructions"
+  },
+  "AT10": {
+    "intitule": "Autres-02-04",
+    "intituleComplementaire": "Leaseback"
+  }
+}

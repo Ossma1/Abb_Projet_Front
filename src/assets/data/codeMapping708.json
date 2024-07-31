@@ -1,0 +1,130 @@
+{
+  "CL01": {
+    "intitule": "CL1",
+    "intituleComplementaire": "PARTICULIERS ET PROFESSIONNELS"
+  },
+  "CL02": {
+    "intitule": "CL-01-1",
+    "intituleComplementaire": "Risque faible"
+  },
+  "CL03": {
+    "intitule": "CL-01-2",
+    "intituleComplementaire": "Risque moyen"
+  },
+  "CL04": {
+    "intitule": "CL-01-3",
+    "intituleComplementaire": "Risque moyen-élevé"
+  },
+  "CL05": {
+    "intitule": "CL-01-4",
+    "intituleComplementaire": "Risque élevé"
+  },
+  "CL06": {
+    "intitule": "CL-01-4-1",
+    "intituleComplementaire": "Dont PPE"
+  },
+  "CL07": {
+    "intitule": "CL-01-4-2",
+    "intituleComplementaire": "Dont étrangers non résidents"
+  },
+  "CL08": {
+    "intitule": "CL-02-1",
+    "intituleComplementaire": "Risque faible"
+  },
+  "CL09": {
+    "intitule": "CL-02-2",
+    "intituleComplementaire": "Risque moyen"
+  },
+  "CL10": {
+    "intitule": "CL-02-3",
+    "intituleComplementaire": "Risque moyen-élevé"
+  },
+  "CL11": {
+    "intitule": "CL-02-4",
+    "intituleComplementaire": "Risque élevé"
+  },
+  "CL12": {
+    "intitule": "CL-02-4-1",
+    "intituleComplementaire": "Dont PPE"
+  },
+  "CL13": {
+    "intitule": "CL-02-4-2",
+    "intituleComplementaire": "Dont constructions juridiques y compris les trusts ou toutes structures juridiques équivalentes"
+  },
+  "CL14": {
+    "intitule": "CL3",
+    "intituleComplementaire": "Total Clientèle"
+  },
+  "PP01": {
+    "intitule": "PDT-01",
+    "intituleComplementaire": "Prêt personnel"
+  },
+  "PP02": {
+    "intitule": "PDT-02",
+    "intituleComplementaire": "Crédit automobile"
+  },
+  "PP03": {
+    "intitule": "PDT-03",
+    "intituleComplementaire": "Crédit de location avec option d'achat"
+  },
+  "TR01": {
+    "intitule": "TR-01",
+    "intituleComplementaire": "Paiement des échéances en espèces"
+  },
+  "TR02": {
+    "intitule": "TR-02",
+    "intituleComplementaire": "Paiement apports ou Dépôts de garanties ou premier loyer majoré en espèces"
+  },
+  "TR03": {
+    "intitule": "TR-03",
+    "intituleComplementaire": "Remboursement anticipé en espèces"
+  },
+  "CD01": {
+    "intitule": "CD-01",
+    "intituleComplementaire": "Financement direct"
+  },
+  "CD02": {
+    "intitule": "CD-02",
+    "intituleComplementaire": "Financement à travers le réseau de la banque (groupe)"
+  },
+  "CD03": {
+    "intitule": "CD-03",
+    "intituleComplementaire": "Financements apportés par des apporteurs d'affaires"
+  },
+  "GE01": {
+    "intitule": "GEO-01",
+    "intituleComplementaire": "Clients de nationalité considérées comme juridictions à risque élevé"
+  },
+  "AT01": {
+    "intitule": "Autres-01",
+    "intituleComplementaire": "Déclaration de soupçons sur les 3 dernières années"
+  },
+  "AT02": {
+    "intitule": "Autres-01-01",
+    "intituleComplementaire": "Prêt personnel"
+  },
+  "AT03": {
+    "intitule": "Autres-01-02",
+    "intituleComplementaire": "Crédit automobile"
+  },
+  "AT04": {
+    "intitule": "Autres-01-03",
+    "intituleComplementaire": "Crédit de location avec option d'achat"
+  },
+  "AT05": {
+    "intitule": "Autres-02",
+    "intituleComplementaire": "Fraudes et détournements sur les 3 dernières années"
+  },
+  "AT06": {
+    "intitule": "Autres-02-01",
+    "intituleComplementaire": "Prêt personnel"
+  },
+  "AT07": {
+    "intitule": "Autres-02-02",
+    "intituleComplementaire": "Crédit automobile"
+  },
+  "AT08": {
+    "intitule": "Autres-02-03",
+    "intituleComplementaire": "Crédit de location avec option d'achat"
+  }
+}

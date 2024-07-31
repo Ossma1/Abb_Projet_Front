@@ -1,0 +1,40 @@
+:host ::ng-deep .p-datatable .p-datatable-thead > tr > th {
+  padding: 1rem 0.5rem;
+  text-align: center;
+  font-size: 11px;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-column {
+  flex: 1;
+  min-width: 200px;
+  padding: 1rem;
+}
+
+.form-field {
+  margin-bottom: 1rem;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-field input {
+  width: 100%;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+}
+
+:host ::ng-deep .p-dialog{
+  max-height: 700px !important;
+  max-width: 650px !important;
+
+}

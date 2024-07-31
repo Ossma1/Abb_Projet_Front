@@ -1,0 +1,118 @@
+{
+  "CL01": {
+    "intitule": "CL-01",
+    "intituleComplementaire": "Clientèle à risque faible"
+  },
+  "CL02": {
+    "intitule": "CL-02",
+    "intituleComplementaire": "Clientèle à risque moyen"
+  },
+  "CL03": {
+    "intitule": "CL-03",
+    "intituleComplementaire": "Clientèle à risque moyen-élevé"
+  },
+  "CL04": {
+    "intitule": "CL-04",
+    "intituleComplementaire": "Clientèle à risque élevé"
+  },
+  "CL05": {
+    "intitule": "CL-04-01",
+    "intituleComplementaire": "dont PPE"
+  },
+  "CL06": {
+    "intitule": "CL-04-02",
+    "intituleComplementaire": "dont étrangers non résidents"
+  },
+  "PP01": {
+    "intitule": "PDT-01",
+    "intituleComplementaire": "Comptes de paiement niveau 1"
+  },
+  "PP02": {
+    "intitule": "PDT-02",
+    "intituleComplementaire": "Comptes de paiement niveau 2"
+  },
+  "PP03": {
+    "intitule": "PDT-03",
+    "intituleComplementaire": "Comptes de paiement niveau 3"
+  },
+  "TR01": {
+    "intitule": "TR-01",
+    "intituleComplementaire": "Versements d'espèces"
+  },
+  "TR02": {
+    "intitule": "TR-02",
+    "intituleComplementaire": "Retrait d'espèces"
+  },
+  "TR03": {
+    "intitule": "TR-03",
+    "intituleComplementaire": "Transferts/ virements reçus"
+  },
+  "TR04": {
+    "intitule": "TR-04",
+    "intituleComplementaire": "Transferts/ virements émis"
+  },
+  "TR05": {
+    "intitule": "TR-05",
+    "intituleComplementaire": "Transferts internationaux reçus"
+  },
+  "TR06": {
+    "intitule": "TR-06",
+    "intituleComplementaire": "Transferts internationaux émis"
+  },
+  "TR07": {
+    "intitule": "TR-07",
+    "intituleComplementaire": "Mise à disposition agence"
+  },
+  "TR08": {
+    "intitule": "TR-08",
+    "intituleComplementaire": "Mise à disposition GAB"
+  },
+  "TR09": {
+    "intitule": "TR-09",
+    "intituleComplementaire": "Retrait par carte"
+  },
+  "TR10": {
+    "intitule": "TR-10",
+    "intituleComplementaire": "Paiement par carte"
+  },
+  "CD01": {
+    "intitule": "CD-01",
+    "intituleComplementaire": "Entrée en relation à distance"
+  },
+  "CD02": {
+    "intitule": "CD-02",
+    "intituleComplementaire": "Entrée en relation via un mandataire"
+  },
+  "CD03": {
+    "intitule": "CD-03",
+    "intituleComplementaire": "Opérations via le Web ou application mobile"
+  },
+  "CD04": {
+    "intitule": "CD-04",
+    "intituleComplementaire": "Opérations en présence physique"
+  },
+  "GE01": {
+    "intitule": "GEO-01",
+    "intituleComplementaire": "Clients résidants dans des juridictions à risque élevé"
+  },
+  "GE02": {
+    "intitule": "GEO-02",
+    "intituleComplementaire": "Clients dont les pays de nationalité sont considérés comme juridictions à risques élevés"
+  },
+  "GE03": {
+    "intitule": "GEO-03",
+    "intituleComplementaire": "Transferts transfrontaliers en provenance de juridictions à risque élevé"
+  },
+  "GE04": {
+    "intitule": "GEO-04",
+    "intituleComplementaire": "Transferts transfrontaliers à destination de juridictions à risque élevé"
+  },
+  "AT01": {
+    "intitule": "Autres-01",
+    "intituleComplementaire": "Déclaration de soupçons concernant les particuliers et professionnels sur les 2 dernières années"
+  },
+  "AT02": {
+    "intitule": "Autres-02",
+    "intituleComplementaire": "Fraudes et détournement sur les 2 dernières années"
+  }
+}

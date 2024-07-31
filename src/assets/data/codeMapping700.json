@@ -1,0 +1,17 @@
+[
+  {"Code": "A001", "Libelle": "Banque de détail"},
+  {"Code": "A002", "Libelle": "Banque privée"},
+  {"Code": "A003", "Libelle": "Banque de l'entreprise et du financement"},
+  {"Code": "A004", "Libelle": "Financement du commerce international"},
+  {"Code": "A005", "Libelle": "Correspondance bancaire"},
+  {"Code": "A006", "Libelle": "Banque offshore"},
+  {"Code": "A007", "Libelle": "Crédits à la consommation"},
+  {"Code": "A008", "Libelle": "Crédit immobilier"},
+  {"Code": "A009", "Libelle": "Leasing"},
+  {"Code": "A010", "Libelle": "Factoring"},
+  {"Code": "A011", "Libelle": "Financement participatif"},
+  {"Code": "A012", "Libelle": "Comptes de paiement"},
+  {"Code": "A013", "Libelle": "Transfert de fonds"},
+  {"Code": "A014", "Libelle": "Micro-crédit"},
+  {"Code": "A015", "Libelle": "Total"}
+]

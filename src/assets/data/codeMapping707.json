@@ -1,0 +1,38 @@
+{
+  "PP01": {
+    "intitule": "PDT-01",
+    "intituleComplementaire": "Dépôts d'investissement de la clientèle"
+  },
+  "PP02": {
+    "intitule": "PDT-02",
+    "intituleComplementaire": "Financements participatifs par Mourabaha"
+  },
+  "PP03": {
+    "intitule": "PDT-02-1",
+    "intituleComplementaire": "Mourabaha immobilière"
+  },
+  "PP04": {
+    "intitule": "PDT-02-2",
+    "intituleComplementaire": "Mourabaha automobile"
+  },
+  "PP05": {
+    "intitule": "PDT-02-3",
+    "intituleComplementaire": "Mourabaha équipement"
+  },
+  "PP06": {
+    "intitule": "PDT-03",
+    "intituleComplementaire": "Financements participatifs par Mourabaha hors marges constatées d'avance**"
+  },
+  "PP07": {
+    "intitule": "PDT-03-1",
+    "intituleComplementaire": "Mourabaha immobilière"
+  },
+  "PP08": {
+    "intitule": "PDT-03-2",
+    "intituleComplementaire": "Mourabaha automobile"
+  },
+  "PP09": {
+    "intitule": "PDT-03-3",
+    "intituleComplementaire": "Mourabaha équipement"
+  }
+}

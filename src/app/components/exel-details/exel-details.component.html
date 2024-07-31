@@ -1,0 +1,362 @@
+<h3>{{etat}}</h3>
+
+<div *ngIf="state === '705'; else defaultTable">
+  <p-tabMenu [model]="items" [(activeItem)]="activeItem"></p-tabMenu>
+
+  <div *ngIf="activeItem.label === 'CB1'">
+    <p-table #dt1 [value]="cb1Data" [rows]="10" [paginator]="true"
+      [globalFilterFields]="['numLigne', 'totalFluxType', 'pays', 'nombreValue', 'volume']"
+      [tableStyle]="{ 'min-width': '75rem' }" [rowHover]="true" dataKey="id"
+      currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [showCurrentPageReport]="true">
+      <ng-template pTemplate="header">
+        <tr>
+          <th><p-tableHeaderCheckbox></p-tableHeaderCheckbox></th>
+          <th pSortableColumn="numLigne">Num Ligne <p-sortIcon field="numLigne"></p-sortIcon></th>
+          <th pSortableColumn="totalFluxType">Type de flux</th>
+          <th pSortableColumn="pays">Pays</th>
+          <th pSortableColumn="nombreValue">Nombre</th>
+          <th pSortableColumn="volume">Volume</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-axe>
+        <tr>
+          <td><p-tableCheckbox [value]="axe"></p-tableCheckbox></td>
+          <td>{{axe.numLigne}}</td>
+          <td>{{axe.totalFluxType}}</td>
+          <td>{{axe.pays}}</td>
+          <td>{{axe.nombreValue}}</td>
+          <td>{{axe.volume}}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+    <div style="display: flex;gap: 20px; margin-top: 10px; margin-left: calc(100% - 420px);">
+      <button type="button" class="button-ligne" pButton label="Ajouter une ligne"
+        (click)="showAddCb1Dialog()"></button>
+      <button type="button" class="button-ligne" pButton label="Enregister" (click)="saveData()"></button>
+      <button type="button" class="button-ligne" pButton label="Supprimer" (click)="deleteRow(dt1.selection)"></button>
+    </div>
+  </div>
+
+  <div *ngIf="activeItem.label === 'CB2'">
+    <p-table #dt2 [value]="cb2Data" [rows]="10" [paginator]="true"
+      [globalFilterFields]="['numLigne', 'nom', 'codeBIC', 'dateEntreeEnRelation', 'maisonMereOuFiliale', 'compteNostroOuVostro', 'devise', 'paysAgrement', 'niveauRisqueBCFTDuPays', 'profilRisqueBeneficiairesEffectifs', 'utilisationCompteCorrespondanceParTiers', 'statutDuCompte', 'nombreFluxEmis', 'nombreFluxEmisPaysRisque', 'volumeFluxEmis', 'volumeFluxEmisPaysRisque', 'nombreFluxRecus', 'nombreFluxRecusPaysRisque', 'volumeFluxRecus', 'volumeFluxRecusPaysRisque']"
+      [tableStyle]="{ 'min-width': '75rem' }" [rowHover]="true" dataKey="id" [resizableColumns]="true"
+      [autoLayout]="true" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+      [showCurrentPageReport]="true">
+      <ng-template pTemplate="header">
+        <tr class="small-header">
+          <th><p-tableHeaderCheckbox></p-tableHeaderCheckbox></th>
+          <th pSortableColumn="numLigne">Num Ligne <p-sortIcon field="numLigne"></p-sortIcon></th>
+          <th pSortableColumn="nom">Nom</th>
+          <th pSortableColumn="codeBIC">Code BIC</th>
+          <th pSortableColumn="dateEntreeEnRelation">Date d'entrée en relation</th>
+          <th pSortableColumn="maisonMereOuFiliale">Maison mère ou filiale</th>
+          <th pSortableColumn="compteNostroOuVostro">Compte Nostro/Vostro</th>
+          <th pSortableColumn="devise">Devise</th>
+          <th pSortableColumn="paysAgrement">Pays d'agrément</th>
+          <th pSortableColumn="niveauRisqueBCFTDuPays">Niveau de risque BCFT du pays</th>
+          <th pSortableColumn="profilRisqueBeneficiairesEffectifs">Profil de risque des bénéficiaires effectifs</th>
+          <th pSortableColumn="utilisationCompteCorrespondanceParTiers">Utilisation du compte de correspondance par des
+            tiers</th>
+          <th pSortableColumn="statutDuCompte">Statut du compte</th>
+          <th pSortableColumn="nombreFluxEmis">Nombre de flux émis</th>
+          <th pSortableColumn="nombreFluxEmisPaysRisque">Nombre de flux émis vers des pays à risque</th>
+          <th pSortableColumn="volumeFluxEmis">Volume des flux émis</th>
+          <th pSortableColumn="volumeFluxEmisPaysRisque">Volume des flux émis vers des pays à risque</th>
+          <th pSortableColumn="nombreFluxRecus">Nombre de flux reçus</th>
+          <th pSortableColumn="nombreFluxRecusPaysRisque">Nombre de flux reçus de pays à risque</th>
+          <th pSortableColumn="volumeFluxRecus">Volume des flux reçus</th>
+          <th pSortableColumn="volumeFluxRecusPaysRisque">Volume des flux reçus de pays à risque</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-axe>
+        <tr>
+          <td><p-tableCheckbox [value]="axe"></p-tableCheckbox></td>
+          <td>{{axe.numLigne}}</td>
+          <td>{{axe.nom}}</td>
+          <td>{{axe.codeBIC}}</td>
+          <td>{{axe.dateEntreeEnRelation}}</td>
+          <td>{{axe.maisonMereOuFiliale}}</td>
+          <td>{{axe.compteNostroOuVostro}}</td>
+          <td>{{axe.devise}}</td>
+          <td>{{axe.paysAgrement}}</td>
+          <td>{{axe.niveauRisqueBCFTDuPays}}</td>
+          <td>{{axe.profilRisqueBeneficiairesEffectifs}}</td>
+          <td>{{axe.utilisationCompteCorrespondanceParTiers}}</td>
+          <td>{{axe.statutDuCompte}}</td>
+          <td>{{axe.nombreFluxEmis}}</td>
+          <td>{{axe.nombreFluxEmisPaysRisque}}</td>
+          <td>{{axe.volumeFluxEmis}}</td>
+          <td>{{axe.volumeFluxEmisPaysRisque}}</td>
+          <td>{{axe.nombreFluxRecus}}</td>
+          <td>{{axe.nombreFluxRecusPaysRisque}}</td>
+          <td>{{axe.volumeFluxRecus}}</td>
+          <td>{{axe.volumeFluxRecusPaysRisque}}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+    <div style="display: flex;gap: 20px; margin-top: 10px; margin-left: calc(100% - 420px);">
+      <button type="button" class="button-ligne" pButton label="Ajouter une ligne"
+        (click)="showAddCb2Dialog()"></button>
+      <button type="button" class="button-ligne" pButton label="Enregister" (click)="saveData()"></button>
+      <button type="button" class="button-ligne" pButton label="Supprimer" (click)="deleteRow(dt2.selection)"></button>
+    </div>
+  </div>
+</div>
+
+
+
+<ng-template #defaultTable>
+  <p-table #dt [value]="tableData" [rows]="10" [paginator]="true"
+    [globalFilterFields]="['name', 'codeAxes', 'libelleAxes', 'nombreClients', 'encoursDepots', 'fluxDebiteurs2020', 'fluxCrediteurs2020', 'nombreClientsCartes', 'risqueInherent', 'commentaires']"
+    [tableStyle]="{ 'min-width': '75rem' }" [rowHover]="true" dataKey="codeAxes" [(selection)]="selectedLignes"
+    currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [showCurrentPageReport]="true">
+    <ng-template pTemplate="header">
+      <tr>
+        <th><p-tableHeaderCheckbox></p-tableHeaderCheckbox></th>
+        <th pSortableColumn="axes">Axes <p-sortIcon field="name"></p-sortIcon></th>
+        <th pSortableColumn="codeAxes">code axes</th>
+        <th pSortableColumn="libelleAxes">Libellé axes</th>
+        <th pSortableColumn="nombreClients">Nombre de clients</th>
+        <th pSortableColumn="encoursDepots">Encourrs dépots</th>
+        <th pSortableColumn="fluxDebiteurs2020">Flux débiteurs n - 1</th>
+        <th pSortableColumn="fluxCrediteurs2020">Flux créditeurs n - 1</th>
+        <th *ngIf="state=== '702'" pSortableColumn="nombreClientsCartes">Nombre de clients de cartes prépayés</th>
+        <th pSortableColumn="risqueInherent">Rique inherent</th>
+        <th pSortableColumn="commentaires">Commentaire</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-axe>
+      <tr>
+        <td><p-tableCheckbox [value]="axe"></p-tableCheckbox></td>
+        <td>{{axe.axes}}</td>
+        <td>{{axe.codeAxes}}</td>
+        <td>{{axe.libelleAxes}}</td>
+        <td>{{axe.nombreClients}}</td>
+        <td>{{axe.encoursDepots}}</td>
+        <td>{{axe.fluxDebiteurs2020}}</td>
+        <td>{{axe.fluxCrediteurs2020}}</td>
+        <td *ngIf="state=== '702'">{{axe.nombreClientsCartes}}</td>
+        <td>{{axe.risqueInherent}}</td>
+        <td>{{axe.commentaires}}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+  <div style="display: flex;gap: 20px; margin-top: 10px; margin-left: calc(100% - 420px);">
+    <button type="button" class="button-ligne" pButton label="Ajouter une ligne" (click)="showAddAxeDialog()"></button>
+    <button type="button" class="button-ligne" pButton label="Enregister" (click)="saveData()"></button>
+    <button type="button" class="button-ligne" pButton label="Supprimer" (click)="deleteRow(dt.selection)"></button>
+  </div>
+</ng-template>
+
+
+
+<p-dialog [draggable]="false" [closable]="true" [resizable]="false" header="Ajouter un axe"
+  [(visible)]="displayAddAxeDialog" [modal]="true" [style]="{width: '700px'}">
+  <div class="form-container">
+    <div class="form-column">
+      <div class="form-field">
+        <label for="codeAxes">Code Axes</label>
+        <p-dropdown [style]="{'width':'100%'}" appendTo="body" [options]="codeAxesOptions" [(ngModel)]="newAxe.codeAxes"
+          (onChange)="onCodeAxesChange($event)" placeholder="Sélectionner un code axe" required></p-dropdown>
+        <div *ngIf="!newAxe.codeAxes && submitted" class="error">Code Axes est obligatoire</div>
+      </div>
+      <div class="form-field">
+        <label for="nombreClients">Nombre de Clients</label>
+        <input id="nombreClients" type="number" pInputText [(ngModel)]="newAxe.nombreClients" />
+      </div>
+      <div class="form-field">
+        <label for="fluxDebiteurs2020">Flux Débiteurs n - 1</label>
+        <input id="fluxDebiteurs2020" type="number" pInputText [(ngModel)]="newAxe.fluxDebiteurs2020" />
+      </div>
+      <div class="form-field" *ngIf="state === '702'">
+        <label for="nombreClientsCartes">Nombre de Clients de Cartes Prépayées</label>
+        <input id="nombreClientsCartes" type="number" pInputText [(ngModel)]="newAxe.nombreClientsCartes" />
+      </div>
+      <div class="form-field">
+        <label for="risqueInherent">Risque Inhérent</label>
+        <p-dropdown [style]="{'width':'100%'}" appendTo="body" showClear="true" [options]="riskLevels"
+          [(ngModel)]="newAxe.risqueInherent" placeholder="Sélectionner risque Inherent"></p-dropdown>
+      </div>
+    </div>
+
+    <div class="form-column">
+      <div class="form-field">
+        <label for="libelleAxes">Libellé Axes</label>
+        <p-dropdown [style]="{'width':'100%'}" appendTo="body" [options]="intituleComplementaireOptions"
+          [(ngModel)]="newAxe.libelleAxes" (onChange)="onLibelleAxesChange($event)"
+          placeholder="Sélectionner un libellé axe"></p-dropdown>
+      </div>
+      <div class="form-field">
+        <label for="encoursDepots">Encours Dépots</label>
+        <input id="encoursDepots" type="number" pInputText [(ngModel)]="newAxe.encoursDepots" />
+      </div>
+      <div class="form-field">
+        <label for="fluxCrediteurs2020">Flux Créditeurs n - 1</label>
+        <input id="fluxCrediteurs2020" type="number" pInputText [(ngModel)]="newAxe.fluxCrediteurs2020" />
+      </div>
+      <div class="form-field">
+        <label for="commentaires">Commentaires</label>
+        <input id="commentaires" type="text" pInputText [(ngModel)]="newAxe.commentaires" />
+      </div>
+    </div>
+  </div>
+  <p-footer>
+    <button type="button" pButton label="Ajouter" icon="pi pi-check" (click)="addAxe()"
+      class="ui-button-success"></button>
+    <button type="button" pButton label="Annuler" icon="pi pi-times" (click)="displayAddAxeDialog=false"
+      class="ui-button-secondary"></button>
+  </p-footer>
+</p-dialog>
+
+
+<!-- Dialog for adding a new row to CB1 table -->
+<p-dialog header="Ajouter une ligne à CB1" [draggable]="false" [closable]="true" [(visible)]="displayAddCb1Dialog"
+  [modal]="true" [style]="{width: '500px'}">
+  <div class="form-container">
+    <div class="form-column">
+      <div class="form-field">
+        <label for="totalFluxType">Type de flux</label>
+        <p-dropdown id="totalFluxType" [style]="{'width':'100%'}" appendTo="body" [options]="typeFluxOption" [(ngModel)]="newCb1Row.totalFluxType"
+          placeholder="total Flux Type" required></p-dropdown>
+      </div>
+      <div class="form-field">
+        <label for="nombreValue">Nombre</label>
+        <input id="nombreValue" type="number" pInputText [(ngModel)]="newCb1Row.nombreValue" />
+      </div>
+    </div>
+    <div class="form-column">
+
+      <div class="form-field">
+        <label for="pays">Pays</label>
+        <input id="pays" type="text" pInputText [(ngModel)]="newCb1Row.pays" />
+      </div>
+
+      <div class="form-field">
+        <label for="volume">Volume</label>
+        <input id="volume" type="number" pInputText [(ngModel)]="newCb1Row.volume" />
+      </div>
+    </div>
+
+  </div>
+  <p-footer>
+    <button type="button" pButton label="Ajouter" icon="pi pi-check" (click)="addCbAxe()"
+      class="ui-button-success"></button>
+    <button type="button" pButton label="Annuler" icon="pi pi-times" (click)="displayAddCb1Dialog=false"
+      class="ui-button-secondary"></button>
+  </p-footer>
+</p-dialog>
+
+<!-- Dialog for adding a new row to CB2 table -->
+<!-- Dialog for adding a new row to CB2 table -->
+<!-- Dialog for adding a new row to CB2 table -->
+<p-dialog header="Ajouter une ligne à CB2" [draggable]="false" [closable]="true" [resizable]="false"
+  [(visible)]="displayAddCb2Dialog" [modal]="true"[style]="{minWidth: '750px'}" >
+  <div class="form-container">
+    <div class="form-column">
+
+      <div class="form-field">
+        <label for="nom">Nom</label>
+        <input id="nom" type="text" pInputText [(ngModel)]="newCb2Row.nom" />
+      </div>
+
+      <div class="form-field">
+        <label for="dateEntreeEnRelation">Date Entree En Relation</label>
+        <input id="dateEntreeEnRelation" type="date" pInputText [(ngModel)]="newCb2Row.dateEntreeEnRelation" />
+      </div>
+
+      <div class="form-field">
+        <label for="compteNostroOuVostro">Compte Nostro Ou Vostro</label>
+        <input id="compteNostroOuVostro" type="text" pInputText [(ngModel)]="newCb2Row.compteNostroOuVostro" />
+      </div>
+
+      <div class="form-field">
+        <label for="paysAgrement">Pays Agrement</label>
+        <input id="paysAgrement" type="text" pInputText [(ngModel)]="newCb2Row.paysAgrement" />
+      </div>
+      <div class="form-field">
+        <label for="profilRisqueBeneficiairesEffectifs">Profil Risque Beneficiaires Effectifs</label>
+        <input id="profilRisqueBeneficiairesEffectifs" type="text" pInputText
+          [(ngModel)]="newCb2Row.profilRisqueBeneficiairesEffectifs" />
+      </div>
+      <div class="form-field">
+        <label for="statutDuCompte">Statut Du Compte</label>
+        <input id="statutDuCompte" type="text" pInputText [(ngModel)]="newCb2Row.statutDuCompte" />
+      </div>
+      <div class="form-field">
+        <label for="nombreFluxEmisPaysRisque">Nombre Flux Emis Pays Risque</label>
+        <input id="nombreFluxEmisPaysRisque" type="number" pInputText
+          [(ngModel)]="newCb2Row.nombreFluxEmisPaysRisque" />
+      </div>
+      <div class="form-field">
+        <label for="volumeFluxEmisPaysRisque">Volume Flux Emis Pays Risque</label>
+        <input id="volumeFluxEmisPaysRisque" type="number" pInputText
+          [(ngModel)]="newCb2Row.volumeFluxEmisPaysRisque" />
+      </div>
+      <div class="form-field">
+        <label for="nombreFluxRecusPaysRisque">Nombre Flux Recus Pays Risque</label>
+        <input id="nombreFluxRecusPaysRisque" type="number" pInputText
+          [(ngModel)]="newCb2Row.nombreFluxRecusPaysRisque" />
+      </div>
+      <div class="form-field">
+        <label for="volumeFluxRecusPaysRisque">Volume Flux Recus Pays Risque</label>
+        <input id="volumeFluxRecusPaysRisque" type="number" pInputText
+          [(ngModel)]="newCb2Row.volumeFluxRecusPaysRisque" />
+      </div>
+    </div>
+    <div class="form-column">
+      <div class="form-field">
+        <label for="codeBIC">Code BIC</label>
+        <input id="codeBIC" type="text" pInputText [(ngModel)]="newCb2Row.codeBIC" />
+      </div>
+      <div class="form-field">
+        <label for="maisonMereOuFiliale">Maison Mere Ou Filiale</label>
+        <input id="maisonMereOuFiliale" type="text" pInputText [(ngModel)]="newCb2Row.maisonMereOuFiliale" />
+      </div>
+      <div class="form-field">
+        <label for="devise">Devise</label>
+        <input id="devise" type="text" pInputText [(ngModel)]="newCb2Row.devise" />
+      </div>
+      <div class="form-field">
+        <label for="niveauRisqueBCFTDuPays">Niveau Risque BCFT Du Pays</label>
+        <input id="niveauRisqueBCFTDuPays" type="text" pInputText [(ngModel)]="newCb2Row.niveauRisqueBCFTDuPays" />
+      </div>
+
+      <div class="form-field">
+        <label for="utilisationCompteCorrespondanceParTiers">Utilisation Compte Correspondance Par Tiers</label>
+        <input id="utilisationCompteCorrespondanceParTiers" type="text" pInputText
+          [(ngModel)]="newCb2Row.utilisationCompteCorrespondanceParTiers" />
+      </div>
+
+      <div class="form-field">
+        <label for="nombreFluxEmis">Nombre Flux Emis</label>
+        <input id="nombreFluxEmis" type="number" pInputText [(ngModel)]="newCb2Row.nombreFluxEmis" />
+      </div>
+
+      <div class="form-field">
+        <label for="volumeFluxEmis">Volume Flux Emis</label>
+        <input id="volumeFluxEmis" type="number" pInputText [(ngModel)]="newCb2Row.volumeFluxEmis" />
+      </div>
+
+      <div class="form-field">
+        <label for="nombreFluxRecus">Nombre Flux Recus</label>
+        <input id="nombreFluxRecus" type="number" pInputText [(ngModel)]="newCb2Row.nombreFluxRecus" />
+      </div>
+
+      <div class="form-field">
+        <label for="volumeFluxRecus">Volume Flux Recus</label>
+        <input id="volumeFluxRecus" type="number" pInputText [(ngModel)]="newCb2Row.volumeFluxRecus" />
+      </div>
+
+    </div>
+  </div>
+  <p-footer>
+    <button type="button" pButton label="Ajouter" icon="pi pi-check" (click)="addCbAxe()"
+      class="ui-button-success"></button>
+    <button type="button" pButton label="Annuler" icon="pi pi-times" (click)="displayAddCb2Dialog=false"
+      class="ui-button-secondary"></button>
+  </p-footer>
+</p-dialog>
+
+
+

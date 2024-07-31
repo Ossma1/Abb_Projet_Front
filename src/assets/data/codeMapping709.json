@@ -1,0 +1,134 @@
+{
+  "CL01": {
+    "intitule": "CL1",
+    "intituleComplementaire": "PARTICULIERS ET PROFESSIONNELS"
+  },
+  "CL02": {
+    "intitule": "CL-01-1",
+    "intituleComplementaire": "Risque faible"
+  },
+  "CL03": {
+    "intitule": "CL-01-2",
+    "intituleComplementaire": "Risque moyen"
+  },
+  "CL04": {
+    "intitule": "CL-01-3",
+    "intituleComplementaire": "Risque moyen-élevé"
+  },
+  "CL05": {
+    "intitule": "CL-01-4",
+    "intituleComplementaire": "Risque élevé"
+  },
+  "CL06": {
+    "intitule": "CL-01-4-1",
+    "intituleComplementaire": "Dont PPE"
+  },
+  "CL07": {
+    "intitule": "CL-01-4-2",
+    "intituleComplementaire": "Dont étrangers non résidents"
+  },
+  "CL08": {
+    "intitule": "CL2",
+    "intituleComplementaire": "PERSONNES MORALES"
+  },
+  "CL09": {
+    "intitule": "CL-02-1",
+    "intituleComplementaire": "Risque faible"
+  },
+  "CL10": {
+    "intitule": "CL-02-2",
+    "intituleComplementaire": "Risque moyen"
+  },
+  "CL11": {
+    "intitule": "CL-02-3",
+    "intituleComplementaire": "Risque moyen-élevé"
+  },
+  "CL12": {
+    "intitule": "CL-02-4",
+    "intituleComplementaire": "Risque élevé"
+  },
+  "CL13": {
+    "intitule": "CL-02-4-1",
+    "intituleComplementaire": "Dont PPE"
+  },
+  "CL14": {
+    "intitule": "CL-02-4-2",
+    "intituleComplementaire": "Dont constructions juridiques y compris les trusts ou toutes structures juridiques équivalentes"
+  },
+  "CL15": {
+    "intitule": "CL3",
+    "intituleComplementaire": "TOTAL CLIENTELE"
+  },
+  "PP01": {
+    "intitule": "PDT-01",
+    "intituleComplementaire": "Crédits à l'habitat"
+  },
+  "PP02": {
+    "intitule": "PDT-01-01",
+    "intituleComplementaire": "Prêts encouragés par l'État"
+  },
+  "PP03": {
+    "intitule": "PDT-01-02",
+    "intituleComplementaire": "Prêts libres"
+  },
+  "PP04": {
+    "intitule": "PDT-02",
+    "intituleComplementaire": "Crédits à la promotion immobilière"
+  },
+  "TR01": {
+    "intitule": "TR-01",
+    "intituleComplementaire": "Paiement des échéances en espèces"
+  },
+  "TR02": {
+    "intitule": "TR-02",
+    "intituleComplementaire": "Paiement apports en espèces"
+  },
+  "TR03": {
+    "intitule": "TR-03",
+    "intituleComplementaire": "Remboursement anticipé en espèces"
+  },
+  "CD01": {
+    "intitule": "CD-01",
+    "intituleComplementaire": "Financement direct"
+  },
+  "CD02": {
+    "intitule": "CD-02",
+    "intituleComplementaire": "Financement à travers le réseau de la banque (groupe)"
+  },
+  "CD03": {
+    "intitule": "CD-03",
+    "intituleComplementaire": "Entrée en relation via tiers: Apporteurs d'affaires (partenaires, courtiers, ...)"
+  },
+  "GE01": {
+    "intitule": "GEO-01",
+    "intituleComplementaire": "Financements pour des Clients résidents dans des juridictions à risque élevé"
+  },
+  "GE02": {
+    "intitule": "GEO-02",
+    "intituleComplementaire": "Financements pour Clients de nationalité considérées comme juridictions à risques élevés"
+  },
+  "AT01": {
+    "intitule": "Autres-01",
+    "intituleComplementaire": "Déclaration de soupçons sur les 3 dernières années"
+  },
+  "AT02": {
+    "intitule": "Autres-01-01",
+    "intituleComplementaire": "Crédits à l'habitat"
+  },
+  "AT03": {
+    "intitule": "Autres-01-02",
+    "intituleComplementaire": "Crédits à la promotion immobilière"
+  },
+  "AT04": {
+    "intitule": "Autres-02",
+    "intituleComplementaire": "Fraudes et détournements sur les 3 dernières années"
+  },
+  "AT05": {
+    "intitule": "Autres-02-1",
+    "intituleComplementaire": "Crédits à l'habitat"
+  },
+  "AT06": {
+    "intitule": "Autres-02-2",
+    "intituleComplementaire": "Crédits à la promotion immobilière"
+  }
+}

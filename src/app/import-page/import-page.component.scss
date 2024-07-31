@@ -1,0 +1,87 @@
+.p-fieldset {
+  margin-bottom: 2rem;
+}
+
+.p-fluid .field {
+  margin-bottom: 1rem;
+}
+
+p-table {
+  margin-top: 2rem;
+}
+.button-ligne{
+min-width: 90px;
+margin: auto;
+}
+.button-form {
+  margin-top: 15px;
+  margin-left: 100px;
+width: 150px;
+height:  40px;
+position: relative;
+bottom: 0;
+}
+button {
+  margin-inline: 0.5rem;
+}
+:host ::ng-deep .p-fileupload-row>div{
+  width: fit-content;
+}
+
+:host ::ng-deep .p-fileupload-row>div:last-child button{
+  width: 30px;
+}
+:host ::ng-deep .p-datatable .p-datatable-tbody > tr > td {
+  padding: 0.5rem 0.1rem;
+
+  font-size: 11px;
+text-align: center;}
+
+:host ::ng-deep .p-datatable .p-datatable-thead > tr > th {
+  padding: 0.8rem   0.5rem;
+  text-align: center;
+  font-size: 12px;
+}
+
+
+:host ::ng-deep .p-fileupload .p-fileupload-buttonbar{
+text-align: center;
+}
+
+:host ::ng-deep .p-fileupload .p-fileupload-content {
+  padding: 1rem 1rem;
+  }
+/* styles.css or component-specific CSS file */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+}
+
+.custom-button:hover {
+  background-color: #0056b3;
+}
+.disabled-button {
+  pointer-events: none;
+  opacity: 0.5;
+}
